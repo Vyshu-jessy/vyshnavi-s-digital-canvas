@@ -416,7 +416,7 @@ function Journey() {
                     {/* dot */}
                     <div className="absolute left-6 md:left-1/2 -translate-x-1/2 z-10">
                       <motion.div
-                        className={`h-5 w-5 rounded-full ${m.future ? "bg-ink/30" : "btn-brand"} ring-4 ring-background`}
+                        className={`h-5 w-5 rounded-full btn-brand ring-4 ring-background`}
                         animate={m.current ? { scale: [1, 1.3, 1], boxShadow: ["0 0 0 0 rgba(0,171,228,0.6)", "0 0 0 12px rgba(0,171,228,0)", "0 0 0 0 rgba(0,171,228,0)"] } : {}}
                         transition={{ duration: 2, repeat: Infinity }}
                       />
@@ -430,7 +430,7 @@ function Journey() {
                         <h3 className="text-xl font-bold text-ink">{m.title}</h3>
                         <p className="mt-1 text-sm text-ink-soft">{m.sub}</p>
                         {m.current && <span className="mt-3 inline-block rounded-full bg-brand/10 px-2 py-0.5 text-[10px] font-mono tracking-wider text-brand">CURRENT</span>}
-                        {m.future && <span className="mt-3 inline-block rounded-full bg-ink/10 px-2 py-0.5 text-[10px] font-mono tracking-wider text-ink-soft">GOAL</span>}
+                        
                       </div>
                     </div>
                     <div className={`hidden md:block ${left ? "" : "md:order-1"}`} />
