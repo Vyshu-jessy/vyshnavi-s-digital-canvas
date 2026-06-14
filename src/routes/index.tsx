@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion, useScroll, useTransform, useSpring, useMotionValue, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
-  ArrowRight, Download, Mail, Github, Linkedin, Code2, Database, GitBranch,
+  ArrowRight, Download, Mail, Github, Code2, Database, GitBranch,
   Cpu, Boxes, Sparkles, Brain, Users, Rocket, GraduationCap, Trophy, Target,
   ExternalLink, MapPin, Languages, ChevronDown, Zap, Layers, Terminal,
 } from "lucide-react";
