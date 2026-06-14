@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { motion, useScroll, useTransform, useSpring, useMotionValue, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import {
-  ArrowRight, Download, Mail, Github, Linkedin, Code2, Database, GitBranch,
+  ArrowRight, Download, Mail, Github, Code2, Database, GitBranch,
   Cpu, Boxes, Sparkles, Brain, Users, Rocket, GraduationCap, Trophy, Target,
   ExternalLink, MapPin, Languages, ChevronDown, Zap, Layers, Terminal,
 } from "lucide-react";
@@ -206,7 +206,7 @@ function Hero() {
 
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-xl text-lg text-ink-soft leading-relaxed">
-              Computer Science Engineer passionate about Java development, software engineering, problem solving, and building reliable applications that create meaningful impact.
+              Computer Science Engineer and Java Developer. Recently completed B.Tech and actively looking for full-time software engineering opportunities to build reliable, real-world applications.
             </p>
           </Reveal>
 
@@ -229,7 +229,7 @@ function Hero() {
             <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs font-mono tracking-wider text-ink-soft">
               <div className="flex items-center gap-2"><GraduationCap className="h-4 w-4 text-brand" /> B.TECH CSE · GVPCEW</div>
               <div className="flex items-center gap-2"><Trophy className="h-4 w-4 text-brand" /> 83.7% ACADEMIC</div>
-              <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-brand" /> CLASS OF 2026</div>
+              <div className="flex items-center gap-2"><MapPin className="h-4 w-4 text-brand" /> OPEN TO WORK</div>
             </div>
           </Reveal>
         </div>
@@ -386,10 +386,10 @@ function About() {
 
 function Journey() {
   const milestones = [
-    { year: "2020", title: "SSC", sub: "ZPHS Thotagaruvu", icon: GraduationCap },
+    { year: "2026", title: "Bachelor of Technology", sub: "Computer Science and Engineering · GVPCEW · 83.7% — Completed", icon: Trophy },
     { year: "2022", title: "Intermediate Education", sub: "Narayana Junior College", icon: GraduationCap },
-    { year: "2026", title: "Bachelor of Technology", sub: "Computer Science and Engineering · GVPCEW · 83.7%", icon: Trophy, current: true },
-    { year: "Next", title: "Software Engineer", sub: "Java Developer — building production software", icon: Target, future: true },
+    { year: "2020", title: "SSC (10th)", sub: "ZPHS Thotagaruvu", icon: GraduationCap },
+    { year: "Now", title: "Software Engineer", sub: "Java Developer — actively looking for full-time opportunities", icon: Target, current: true },
   ];
 
   return (
@@ -416,7 +416,7 @@ function Journey() {
                     {/* dot */}
                     <div className="absolute left-6 md:left-1/2 -translate-x-1/2 z-10">
                       <motion.div
-                        className={`h-5 w-5 rounded-full ${m.future ? "bg-ink/30" : "btn-brand"} ring-4 ring-background`}
+                        className={`h-5 w-5 rounded-full btn-brand ring-4 ring-background`}
                         animate={m.current ? { scale: [1, 1.3, 1], boxShadow: ["0 0 0 0 rgba(0,171,228,0.6)", "0 0 0 12px rgba(0,171,228,0)", "0 0 0 0 rgba(0,171,228,0)"] } : {}}
                         transition={{ duration: 2, repeat: Infinity }}
                       />
@@ -430,7 +430,7 @@ function Journey() {
                         <h3 className="text-xl font-bold text-ink">{m.title}</h3>
                         <p className="mt-1 text-sm text-ink-soft">{m.sub}</p>
                         {m.current && <span className="mt-3 inline-block rounded-full bg-brand/10 px-2 py-0.5 text-[10px] font-mono tracking-wider text-brand">CURRENT</span>}
-                        {m.future && <span className="mt-3 inline-block rounded-full bg-ink/10 px-2 py-0.5 text-[10px] font-mono tracking-wider text-ink-soft">GOAL</span>}
+                        
                       </div>
                     </div>
                     <div className={`hidden md:block ${left ? "" : "md:order-1"}`} />
@@ -722,9 +722,8 @@ function Contact() {
           <Reveal delay={0.1}>
             <div className="space-y-4">
               {[
-                { icon: Github, label: "GitHub", value: "github.com/vyshnavi-patoju", href: "https://github.com" },
-                { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/vyshnavi-patoju", href: "https://linkedin.com" },
-                { icon: Mail, label: "Email", value: "vyshnavi@example.com", href: "mailto:vyshnavi@example.com" },
+                { icon: Github, label: "GitHub", value: "github.com/Vyshu-jessy", href: "https://github.com/Vyshu-jessy/" },
+                { icon: Mail, label: "Email", value: "vyshnavipatoju@gmail.com", href: "mailto:vyshnavipatoju@gmail.com" },
               ].map((l) => (
                 <motion.a
                   key={l.label}
@@ -745,7 +744,7 @@ function Contact() {
 
               <div className="card-elev p-6">
                 <p className="text-sm text-ink-soft leading-relaxed">
-                  Based in India · Open to remote and on-site roles · Available from <span className="text-ink font-medium">mid-2026</span>.
+                  Based in India · Open to remote and on-site roles · <span className="text-ink font-medium">Available immediately</span>.
                 </p>
               </div>
             </div>
