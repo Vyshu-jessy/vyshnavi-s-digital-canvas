@@ -333,16 +333,16 @@ function About() {
           <Reveal delay={0.1}>
             <div className="space-y-6 text-lg leading-relaxed text-ink-soft">
               <p>
-                I'm <span className="text-ink font-semibold">Vyshnavi Patoju</span>, a final-year Computer Science Engineering student at <span className="text-ink">Gayatri Vidya Parishad College of Engineering for Women</span>.
+                I'm <span className="text-ink font-semibold">Vyshnavi Patoju</span>, a <span className="text-ink">Computer Science Engineering Graduate</span> from Gayatri Vidya Parishad College of Engineering for Women.
               </p>
               <p>
-                My story starts with curiosity — a quiet fascination with how everyday apps are built. That curiosity became <span className="text-ink">Java</span>, then full-stack development, then the joy of watching real users use something I made.
+                Passionate about <span className="text-ink">Java development</span>, software engineering, problem solving, and building reliable software solutions. I enjoy transforming ideas into practical applications while continuously learning and improving my technical expertise.
               </p>
               <p>
                 Today I focus on writing software that's <span className="text-brand font-medium">reliable, readable, and built to last</span> — the kind of code I'd be proud to hand off to anyone.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                {["Java", "Full Stack", "REST APIs", "OOP", "DSA"].map((t) => (
+                {["Java", "REST APIs", "CRUD", "OOP", "DSA"].map((t) => (
                   <span key={t} className="rounded-full bg-brand/10 px-3 py-1 text-xs font-mono text-brand">{t}</span>
                 ))}
               </div>
