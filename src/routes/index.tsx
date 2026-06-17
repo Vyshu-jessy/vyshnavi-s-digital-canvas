@@ -650,7 +650,7 @@ function Projects() {
     <section id="projects" className="relative py-32 px-6 bg-surface/40">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="font-mono text-xs tracking-[0.3em] text-brand">04 — WORK</p>
+          <p className="font-mono text-xs tracking-[0.3em] text-brand">05 — WORK</p>
           <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">Featured projects</h2>
           <p className="mt-4 text-ink-soft max-w-xl">A selection of work where I focused on real problems — privacy, money, and care.</p>
         </Reveal>
