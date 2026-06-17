@@ -12,10 +12,10 @@ import profileImg from "@/assets/profile.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Vyshnavi Patoju — Software Engineer & Java Developer" },
-      { name: "description", content: "Portfolio of Vyshnavi Patoju, a final-year CSE student and aspiring Java developer crafting reliable, real-world software." },
-      { property: "og:title", content: "Vyshnavi Patoju — Software Engineer & Java Developer" },
-      { property: "og:description", content: "Portfolio of Vyshnavi Patoju, a final-year CSE student and aspiring Java developer." },
+      { title: "Vyshnavi Patoju — Graduate | Java Developer" },
+      { name: "description", content: "Portfolio of Vyshnavi Patoju, a Computer Science Engineering Graduate and Java Developer building reliable, real-world software." },
+      { property: "og:title", content: "Vyshnavi Patoju — Graduate | Java Developer" },
+      { property: "og:description", content: "Portfolio of Vyshnavi Patoju, a Computer Science Engineering Graduate and Java Developer." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
