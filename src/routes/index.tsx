@@ -5,6 +5,7 @@ import {
   ArrowRight, Download, Mail, Github, Code2, Database, GitBranch,
   Cpu, Boxes, Sparkles, Brain, Users, Rocket, GraduationCap, Trophy, Target,
   ExternalLink, MapPin, Languages, ChevronDown, Zap, Layers, Terminal,
+  Award, BadgeCheck, BookOpen,
 } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
 
