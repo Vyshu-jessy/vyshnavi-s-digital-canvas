@@ -917,9 +917,11 @@ function Portfolio() {
       <Nav />
       <main>
         <Hero />
+        <Highlights />
         <About />
         <Journey />
         <Skills />
+        <Certifications />
         <Projects />
         <WhyMe />
         <FunFacts />
