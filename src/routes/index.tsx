@@ -396,7 +396,7 @@ function Journey() {
     { year: "2026", title: "Bachelor of Technology", sub: "Computer Science and Engineering · GVPCEW · 83.7% — Completed", icon: Trophy },
     { year: "2022", title: "Intermediate Education", sub: "Narayana Junior College", icon: GraduationCap },
     { year: "2020", title: "SSC (10th)", sub: "ZPHS Thotagaruvu", icon: GraduationCap },
-    { year: "Now", title: "Software Engineer", sub: "Java Developer — actively looking for full-time opportunities", icon: Target, current: true },
+    { year: "Now", title: "Java Developer", sub: "Graduate — actively looking for full-time opportunities", icon: Target, current: true },
   ];
 
   return (
