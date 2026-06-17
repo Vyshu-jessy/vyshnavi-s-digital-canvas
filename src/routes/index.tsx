@@ -190,12 +190,17 @@ function Hero() {
       <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center w-full relative">
         <div>
           <Reveal>
-            <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-mono tracking-widest text-ink-soft">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-brand opacity-75 animate-ping" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-brand" />
-              </span>
-              HELLO, I'M VYSHNAVI
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-mono tracking-widest text-ink-soft">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-brand opacity-75 animate-ping" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-brand" />
+                </span>
+                HELLO, I'M VYSHNAVI
+              </div>
+              <div className="inline-flex items-center gap-1.5 rounded-full btn-brand px-3 py-1.5 text-[11px] font-mono tracking-widest">
+                <BadgeCheck className="h-3.5 w-3.5" /> AVAILABLE FOR OPPORTUNITIES
+              </div>
             </div>
           </Reveal>
 
@@ -203,11 +208,12 @@ function Hero() {
             <h1 className="mt-6 text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-ink">
               Crafting <span className="text-gradient">software</span> that solves real problems
             </h1>
+            <p className="mt-3 font-mono text-sm tracking-[0.25em] text-brand">GRADUATE · JAVA DEVELOPER</p>
           </Reveal>
 
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-xl text-lg text-ink-soft leading-relaxed">
-              Computer Science Engineer and Java Developer. Recently completed B.Tech and actively looking for full-time software engineering opportunities to build reliable, real-world applications.
+              Computer Science Engineering Graduate passionate about Java development, software engineering, problem solving, and building reliable software solutions. I enjoy transforming ideas into practical applications while continuously learning and improving my technical expertise.
             </p>
           </Reveal>
 
