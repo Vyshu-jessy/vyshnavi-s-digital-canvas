@@ -591,14 +591,19 @@ function Projects() {
                         <span key={t} className="rounded-md bg-background border border-border px-2 py-0.5 text-xs font-mono text-ink-soft">{t}</span>
                       ))}
                     </div>
-                    <div className="mt-6 flex gap-3">
-                      <a href="#" className="inline-flex items-center gap-1.5 text-sm font-medium text-ink hover:text-brand transition-colors">
-                        <Github className="h-4 w-4" /> Code
-                      </a>
-                      <a href="#" className="inline-flex items-center gap-1.5 text-sm font-medium text-ink hover:text-brand transition-colors">
-                        <ExternalLink className="h-4 w-4" /> Live Demo
-                      </a>
-                    </div>
+                    {p.github && (
+                      <div className="mt-6 flex gap-3">
+                        <a
+                          href={p.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-full btn-brand px-5 py-2.5 text-sm font-semibold"
+                        >
+                          <Github className="h-4 w-4" /> View Source Code
+                          <ExternalLink className="h-3.5 w-3.5 opacity-80" />
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </motion.article>
