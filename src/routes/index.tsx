@@ -455,7 +455,7 @@ function Journey() {
 function Skills() {
   const groups = [
     { title: "Programming Languages", icon: Code2, items: ["Java", "C"] },
-    { title: "Development Skills", icon: Layers, items: ["Java Full Stack", "REST APIs", "CRUD Operations", "Software Development"] },
+    { title: "Development Skills", icon: Layers, items: ["Java Development", "REST APIs", "CRUD Operations", "Software Development"] },
     { title: "Tools", icon: GitBranch, items: ["Git", "GitHub", "VS Code", "IntelliJ IDEA"] },
     { title: "Core Strengths", icon: Brain, items: ["OOP", "Data Structures", "Algorithms", "Problem Solving"] },
   ];
