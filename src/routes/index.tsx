@@ -731,7 +731,7 @@ function WhyMe() {
     <section className="relative py-32 px-6">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="font-mono text-xs tracking-[0.3em] text-brand">05 — WHY ME</p>
+          <p className="font-mono text-xs tracking-[0.3em] text-brand">06 — WHY ME</p>
           <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">What I bring to a team</h2>
         </Reveal>
 
