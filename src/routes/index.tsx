@@ -610,7 +610,7 @@ function Projects() {
 function WhyMe() {
   const reasons = [
     { icon: Brain, title: "Problem Solver", text: "I treat every bug as a puzzle and every requirement as a question worth asking twice." },
-    { icon: Code2, title: "Java Enthusiast", text: "From core Java to full-stack — it's the language I think in." },
+    { icon: Code2, title: "Java Developer", text: "From core Java to REST APIs — it's the language I think in." },
     { icon: Zap, title: "Quick Learner", text: "New framework, new domain, new stack — I get productive fast." },
     { icon: Users, title: "Team Collaborator", text: "Clear communication, honest reviews, shared ownership." },
     { icon: Rocket, title: "Project Builder", text: "I love finishing things. Shipping > planning forever." },
