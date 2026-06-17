@@ -510,6 +510,7 @@ type Project = {
   highlights: string[];
   accent: string;
   icon: typeof Code2;
+  github?: string;
 };
 
 const projects: Project[] = [
@@ -520,6 +521,7 @@ const projects: Project[] = [
     highlights: ["Frontend Contribution", "Backend Services", "Team Collaboration", "Secure Data Processing"],
     accent: "from-cyan-400 to-blue-500",
     icon: Cpu,
+    github: "https://github.com/Vyshu-jessy/HealthCareApplication",
   },
   {
     title: "Expense Tracker",
@@ -528,6 +530,7 @@ const projects: Project[] = [
     highlights: ["Expense Tracking", "CRUD Operations", "Data Management", "User-Friendly Interface"],
     accent: "from-sky-400 to-indigo-500",
     icon: Boxes,
+    github: "https://github.com/Vyshu-jessy/expense-tracker-backend",
   },
   {
     title: "Healthcare Information Management",
