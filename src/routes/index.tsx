@@ -117,7 +117,7 @@ function Nav() {
   }, []);
   const links = [
     ["About", "#about"], ["Journey", "#journey"], ["Skills", "#skills"],
-    ["Projects", "#projects"], ["Contact", "#contact"],
+    ["Certifications", "#certifications"], ["Projects", "#projects"], ["Contact", "#contact"],
   ] as const;
   return (
     <motion.header
