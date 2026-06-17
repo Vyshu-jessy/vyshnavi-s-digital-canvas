@@ -5,16 +5,17 @@ import {
   ArrowRight, Download, Mail, Github, Code2, Database, GitBranch,
   Cpu, Boxes, Sparkles, Brain, Users, Rocket, GraduationCap, Trophy, Target,
   ExternalLink, MapPin, Languages, ChevronDown, Zap, Layers, Terminal,
+  Award, BadgeCheck, BookOpen,
 } from "lucide-react";
 import profileImg from "@/assets/profile.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Vyshnavi Patoju — Software Engineer & Java Developer" },
-      { name: "description", content: "Portfolio of Vyshnavi Patoju, a final-year CSE student and aspiring Java developer crafting reliable, real-world software." },
-      { property: "og:title", content: "Vyshnavi Patoju — Software Engineer & Java Developer" },
-      { property: "og:description", content: "Portfolio of Vyshnavi Patoju, a final-year CSE student and aspiring Java developer." },
+      { title: "Vyshnavi Patoju — Graduate | Java Developer" },
+      { name: "description", content: "Portfolio of Vyshnavi Patoju, a Computer Science Engineering Graduate and Java Developer building reliable, real-world software." },
+      { property: "og:title", content: "Vyshnavi Patoju — Graduate | Java Developer" },
+      { property: "og:description", content: "Portfolio of Vyshnavi Patoju, a Computer Science Engineering Graduate and Java Developer." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -116,7 +117,7 @@ function Nav() {
   }, []);
   const links = [
     ["About", "#about"], ["Journey", "#journey"], ["Skills", "#skills"],
-    ["Projects", "#projects"], ["Contact", "#contact"],
+    ["Certifications", "#certifications"], ["Projects", "#projects"], ["Contact", "#contact"],
   ] as const;
   return (
     <motion.header
@@ -189,12 +190,17 @@ function Hero() {
       <div className="mx-auto max-w-6xl px-6 grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center w-full relative">
         <div>
           <Reveal>
-            <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-mono tracking-widest text-ink-soft">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full rounded-full bg-brand opacity-75 animate-ping" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-brand" />
-              </span>
-              HELLO, I'M VYSHNAVI
+            <div className="flex flex-wrap items-center gap-2">
+              <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-mono tracking-widest text-ink-soft">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-brand opacity-75 animate-ping" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-brand" />
+                </span>
+                HELLO, I'M VYSHNAVI
+              </div>
+              <div className="inline-flex items-center gap-1.5 rounded-full btn-brand px-3 py-1.5 text-[11px] font-mono tracking-widest">
+                <BadgeCheck className="h-3.5 w-3.5" /> AVAILABLE FOR OPPORTUNITIES
+              </div>
             </div>
           </Reveal>
 
@@ -202,11 +208,12 @@ function Hero() {
             <h1 className="mt-6 text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-ink">
               Crafting <span className="text-gradient">software</span> that solves real problems
             </h1>
+            <p className="mt-3 font-mono text-sm tracking-[0.25em] text-brand">GRADUATE · JAVA DEVELOPER</p>
           </Reveal>
 
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-xl text-lg text-ink-soft leading-relaxed">
-              Computer Science Engineer and Java Developer. Recently completed B.Tech and actively looking for full-time software engineering opportunities to build reliable, real-world applications.
+              Computer Science Engineering Graduate passionate about Java development, software engineering, problem solving, and building reliable software solutions. I enjoy transforming ideas into practical applications while continuously learning and improving my technical expertise.
             </p>
           </Reveal>
 
@@ -326,16 +333,16 @@ function About() {
           <Reveal delay={0.1}>
             <div className="space-y-6 text-lg leading-relaxed text-ink-soft">
               <p>
-                I'm <span className="text-ink font-semibold">Vyshnavi Patoju</span>, a final-year Computer Science Engineering student at <span className="text-ink">Gayatri Vidya Parishad College of Engineering for Women</span>.
+                I'm <span className="text-ink font-semibold">Vyshnavi Patoju</span>, a <span className="text-ink">Computer Science Engineering Graduate</span> from Gayatri Vidya Parishad College of Engineering for Women.
               </p>
               <p>
-                My story starts with curiosity — a quiet fascination with how everyday apps are built. That curiosity became <span className="text-ink">Java</span>, then full-stack development, then the joy of watching real users use something I made.
+                Passionate about <span className="text-ink">Java development</span>, software engineering, problem solving, and building reliable software solutions. I enjoy transforming ideas into practical applications while continuously learning and improving my technical expertise.
               </p>
               <p>
                 Today I focus on writing software that's <span className="text-brand font-medium">reliable, readable, and built to last</span> — the kind of code I'd be proud to hand off to anyone.
               </p>
               <div className="flex flex-wrap gap-2 pt-2">
-                {["Java", "Full Stack", "REST APIs", "OOP", "DSA"].map((t) => (
+                {["Java", "REST APIs", "CRUD", "OOP", "DSA"].map((t) => (
                   <span key={t} className="rounded-full bg-brand/10 px-3 py-1 text-xs font-mono text-brand">{t}</span>
                 ))}
               </div>
@@ -389,7 +396,7 @@ function Journey() {
     { year: "2026", title: "Bachelor of Technology", sub: "Computer Science and Engineering · GVPCEW · 83.7% — Completed", icon: Trophy },
     { year: "2022", title: "Intermediate Education", sub: "Narayana Junior College", icon: GraduationCap },
     { year: "2020", title: "SSC (10th)", sub: "ZPHS Thotagaruvu", icon: GraduationCap },
-    { year: "Now", title: "Software Engineer", sub: "Java Developer — actively looking for full-time opportunities", icon: Target, current: true },
+    { year: "Now", title: "Java Developer", sub: "Graduate — actively looking for full-time opportunities", icon: Target, current: true },
   ];
 
   return (
@@ -448,7 +455,7 @@ function Journey() {
 function Skills() {
   const groups = [
     { title: "Programming Languages", icon: Code2, items: ["Java", "C"] },
-    { title: "Development Skills", icon: Layers, items: ["Java Full Stack", "REST APIs", "CRUD Operations", "Software Development"] },
+    { title: "Development Skills", icon: Layers, items: ["Java Development", "REST APIs", "CRUD Operations", "Software Development"] },
     { title: "Tools", icon: GitBranch, items: ["Git", "GitHub", "VS Code", "IntelliJ IDEA"] },
     { title: "Core Strengths", icon: Brain, items: ["OOP", "Data Structures", "Algorithms", "Problem Solving"] },
   ];
@@ -496,6 +503,109 @@ function Skills() {
   );
 }
 
+function Highlights() {
+  const items = [
+    { icon: Code2, label: "Java Development" },
+    { icon: Brain, label: "Problem Solving" },
+    { icon: Rocket, label: "Software Engineering" },
+    { icon: Users, label: "Team Collaboration" },
+    { icon: Sparkles, label: "Continuous Learning" },
+  ];
+  return (
+    <section className="relative py-16 px-6">
+      <div className="mx-auto max-w-6xl">
+        <Reveal>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {items.map((it, i) => (
+              <motion.div
+                key={it.label}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.5 }}
+                whileHover={{ y: -4, scale: 1.04 }}
+                className="group inline-flex items-center gap-2 rounded-full glass-strong px-5 py-2.5 text-sm font-medium text-ink hover:border-brand transition-colors"
+              >
+                <span className="grid h-7 w-7 place-items-center rounded-full btn-brand text-white">
+                  <it.icon className="h-3.5 w-3.5" />
+                </span>
+                {it.label}
+              </motion.div>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function Certifications() {
+  const certs = [
+    {
+      title: "NPTEL Deep Learning",
+      issuer: "IIT Roorkee",
+      type: "Elite Certification",
+      description:
+        "Successfully completed NPTEL Deep Learning course covering neural networks, deep learning fundamentals, and practical applications of machine learning.",
+      icon: Brain,
+    },
+    {
+      title: "NPTEL Data Analytics Using Python",
+      issuer: "IIT Ropar",
+      type: "Elite Certification",
+      description:
+        "Successfully completed NPTEL Data Analytics Using Python course focusing on data analysis, visualization, and analytical problem-solving using Python tools.",
+      icon: BookOpen,
+    },
+  ];
+  return (
+    <section id="certifications" className="relative py-32 px-6">
+      <div className="mx-auto max-w-6xl">
+        <Reveal>
+          <p className="font-mono text-xs tracking-[0.3em] text-brand">04 — CERTIFICATIONS</p>
+          <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">Certifications</h2>
+          <p className="mt-4 text-ink-soft max-w-xl">
+            Professional certifications demonstrating continuous learning and technical growth.
+          </p>
+        </Reveal>
+
+        <div className="mt-14 grid md:grid-cols-2 gap-6">
+          {certs.map((c, i) => (
+            <Reveal key={c.title} delay={i * 0.1}>
+              <motion.div
+                whileHover={{ y: -8 }}
+                className="card-elev p-7 h-full relative overflow-hidden group"
+              >
+                <div
+                  className="absolute -right-16 -top-16 h-48 w-48 rounded-full opacity-30 group-hover:opacity-60 transition-opacity"
+                  style={{ background: "var(--gradient-brand)", filter: "blur(60px)" }}
+                />
+                <div className="relative">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="grid h-14 w-14 place-items-center rounded-2xl btn-brand">
+                      <Award className="h-7 w-7" />
+                    </div>
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3 py-1 text-[11px] font-mono tracking-wider text-brand">
+                      <BadgeCheck className="h-3.5 w-3.5" /> {c.type.toUpperCase()}
+                    </span>
+                  </div>
+                  <h3 className="mt-5 text-xl font-bold text-ink">{c.title}</h3>
+                  <div className="mt-1 flex items-center gap-2 text-sm font-mono text-ink-soft">
+                    <c.icon className="h-4 w-4 text-brand" /> Issued by {c.issuer}
+                  </div>
+                  <p className="mt-4 text-sm leading-relaxed text-ink-soft">{c.description}</p>
+                </div>
+              </motion.div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+
 type Project = {
   title: string;
   description: string;
@@ -503,6 +613,7 @@ type Project = {
   highlights: string[];
   accent: string;
   icon: typeof Code2;
+  github?: string;
 };
 
 const projects: Project[] = [
@@ -513,6 +624,7 @@ const projects: Project[] = [
     highlights: ["Frontend Contribution", "Backend Services", "Team Collaboration", "Secure Data Processing"],
     accent: "from-cyan-400 to-blue-500",
     icon: Cpu,
+    github: "https://github.com/Vyshu-jessy/HealthCareApplication",
   },
   {
     title: "Expense Tracker",
@@ -521,6 +633,7 @@ const projects: Project[] = [
     highlights: ["Expense Tracking", "CRUD Operations", "Data Management", "User-Friendly Interface"],
     accent: "from-sky-400 to-indigo-500",
     icon: Boxes,
+    github: "https://github.com/Vyshu-jessy/expense-tracker-backend",
   },
   {
     title: "Healthcare Information Management",
@@ -537,7 +650,7 @@ function Projects() {
     <section id="projects" className="relative py-32 px-6 bg-surface/40">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="font-mono text-xs tracking-[0.3em] text-brand">04 — WORK</p>
+          <p className="font-mono text-xs tracking-[0.3em] text-brand">05 — WORK</p>
           <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">Featured projects</h2>
           <p className="mt-4 text-ink-soft max-w-xl">A selection of work where I focused on real problems — privacy, money, and care.</p>
         </Reveal>
@@ -581,14 +694,19 @@ function Projects() {
                         <span key={t} className="rounded-md bg-background border border-border px-2 py-0.5 text-xs font-mono text-ink-soft">{t}</span>
                       ))}
                     </div>
-                    <div className="mt-6 flex gap-3">
-                      <a href="#" className="inline-flex items-center gap-1.5 text-sm font-medium text-ink hover:text-brand transition-colors">
-                        <Github className="h-4 w-4" /> Code
-                      </a>
-                      <a href="#" className="inline-flex items-center gap-1.5 text-sm font-medium text-ink hover:text-brand transition-colors">
-                        <ExternalLink className="h-4 w-4" /> Live Demo
-                      </a>
-                    </div>
+                    {p.github && (
+                      <div className="mt-6 flex gap-3">
+                        <a
+                          href={p.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-full btn-brand px-5 py-2.5 text-sm font-semibold"
+                        >
+                          <Github className="h-4 w-4" /> View Source Code
+                          <ExternalLink className="h-3.5 w-3.5 opacity-80" />
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               </motion.article>
@@ -603,7 +721,7 @@ function Projects() {
 function WhyMe() {
   const reasons = [
     { icon: Brain, title: "Problem Solver", text: "I treat every bug as a puzzle and every requirement as a question worth asking twice." },
-    { icon: Code2, title: "Java Enthusiast", text: "From core Java to full-stack — it's the language I think in." },
+    { icon: Code2, title: "Java Developer", text: "From core Java to REST APIs — it's the language I think in." },
     { icon: Zap, title: "Quick Learner", text: "New framework, new domain, new stack — I get productive fast." },
     { icon: Users, title: "Team Collaborator", text: "Clear communication, honest reviews, shared ownership." },
     { icon: Rocket, title: "Project Builder", text: "I love finishing things. Shipping > planning forever." },
@@ -613,7 +731,7 @@ function WhyMe() {
     <section className="relative py-32 px-6">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="font-mono text-xs tracking-[0.3em] text-brand">05 — WHY ME</p>
+          <p className="font-mono text-xs tracking-[0.3em] text-brand">06 — WHY ME</p>
           <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">What I bring to a team</h2>
         </Reveal>
 
@@ -678,7 +796,7 @@ function Contact() {
     <section id="contact" className="relative py-32 px-6">
       <div className="mx-auto max-w-5xl">
         <Reveal>
-          <p className="font-mono text-xs tracking-[0.3em] text-brand">06 — CONTACT</p>
+          <p className="font-mono text-xs tracking-[0.3em] text-brand">07 — CONTACT</p>
           <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">Let's build something good</h2>
           <p className="mt-4 text-ink-soft max-w-xl">Open to internships, full-time roles, and collaborations. I read every message.</p>
         </Reveal>
@@ -765,7 +883,7 @@ function Footer() {
               <div className="grid h-10 w-10 place-items-center rounded-xl btn-brand text-sm font-bold">VP</div>
               <div>
                 <div className="font-display font-bold text-ink">Vyshnavi Patoju</div>
-                <div className="text-xs text-ink-soft font-mono">Software Engineer · Java Developer</div>
+                <div className="text-xs text-ink-soft font-mono">Graduate · Java Developer</div>
               </div>
             </div>
             <p className="mt-5 max-w-md text-sm italic text-ink-soft">
@@ -799,9 +917,11 @@ function Portfolio() {
       <Nav />
       <main>
         <Hero />
+        <Highlights />
         <About />
         <Journey />
         <Skills />
+        <Certifications />
         <Projects />
         <WhyMe />
         <FunFacts />
