@@ -503,6 +503,109 @@ function Skills() {
   );
 }
 
+function Highlights() {
+  const items = [
+    { icon: Code2, label: "Java Development" },
+    { icon: Brain, label: "Problem Solving" },
+    { icon: Rocket, label: "Software Engineering" },
+    { icon: Users, label: "Team Collaboration" },
+    { icon: Sparkles, label: "Continuous Learning" },
+  ];
+  return (
+    <section className="relative py-16 px-6">
+      <div className="mx-auto max-w-6xl">
+        <Reveal>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            {items.map((it, i) => (
+              <motion.div
+                key={it.label}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.5 }}
+                whileHover={{ y: -4, scale: 1.04 }}
+                className="group inline-flex items-center gap-2 rounded-full glass-strong px-5 py-2.5 text-sm font-medium text-ink hover:border-brand transition-colors"
+              >
+                <span className="grid h-7 w-7 place-items-center rounded-full btn-brand text-white">
+                  <it.icon className="h-3.5 w-3.5" />
+                </span>
+                {it.label}
+              </motion.div>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function Certifications() {
+  const certs = [
+    {
+      title: "NPTEL Deep Learning",
+      issuer: "IIT Roorkee",
+      type: "Elite Certification",
+      description:
+        "Successfully completed NPTEL Deep Learning course covering neural networks, deep learning fundamentals, and practical applications of machine learning.",
+      icon: Brain,
+    },
+    {
+      title: "NPTEL Data Analytics Using Python",
+      issuer: "IIT Ropar",
+      type: "Elite Certification",
+      description:
+        "Successfully completed NPTEL Data Analytics Using Python course focusing on data analysis, visualization, and analytical problem-solving using Python tools.",
+      icon: BookOpen,
+    },
+  ];
+  return (
+    <section id="certifications" className="relative py-32 px-6">
+      <div className="mx-auto max-w-6xl">
+        <Reveal>
+          <p className="font-mono text-xs tracking-[0.3em] text-brand">04 — CERTIFICATIONS</p>
+          <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">Certifications</h2>
+          <p className="mt-4 text-ink-soft max-w-xl">
+            Professional certifications demonstrating continuous learning and technical growth.
+          </p>
+        </Reveal>
+
+        <div className="mt-14 grid md:grid-cols-2 gap-6">
+          {certs.map((c, i) => (
+            <Reveal key={c.title} delay={i * 0.1}>
+              <motion.div
+                whileHover={{ y: -8 }}
+                className="card-elev p-7 h-full relative overflow-hidden group"
+              >
+                <div
+                  className="absolute -right-16 -top-16 h-48 w-48 rounded-full opacity-30 group-hover:opacity-60 transition-opacity"
+                  style={{ background: "var(--gradient-brand)", filter: "blur(60px)" }}
+                />
+                <div className="relative">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="grid h-14 w-14 place-items-center rounded-2xl btn-brand">
+                      <Award className="h-7 w-7" />
+                    </div>
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-brand/10 px-3 py-1 text-[11px] font-mono tracking-wider text-brand">
+                      <BadgeCheck className="h-3.5 w-3.5" /> {c.type.toUpperCase()}
+                    </span>
+                  </div>
+                  <h3 className="mt-5 text-xl font-bold text-ink">{c.title}</h3>
+                  <div className="mt-1 flex items-center gap-2 text-sm font-mono text-ink-soft">
+                    <c.icon className="h-4 w-4 text-brand" /> Issued by {c.issuer}
+                  </div>
+                  <p className="mt-4 text-sm leading-relaxed text-ink-soft">{c.description}</p>
+                </div>
+              </motion.div>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
+
 type Project = {
   title: string;
   description: string;
