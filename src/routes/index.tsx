@@ -772,7 +772,7 @@ function Footer() {
               <div className="grid h-10 w-10 place-items-center rounded-xl btn-brand text-sm font-bold">VP</div>
               <div>
                 <div className="font-display font-bold text-ink">Vyshnavi Patoju</div>
-                <div className="text-xs text-ink-soft font-mono">Software Engineer · Java Developer</div>
+                <div className="text-xs text-ink-soft font-mono">Graduate · Java Developer</div>
               </div>
             </div>
             <p className="mt-5 max-w-md text-sm italic text-ink-soft">
