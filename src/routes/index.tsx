@@ -796,7 +796,7 @@ function Contact() {
     <section id="contact" className="relative py-32 px-6">
       <div className="mx-auto max-w-5xl">
         <Reveal>
-          <p className="font-mono text-xs tracking-[0.3em] text-brand">06 — CONTACT</p>
+          <p className="font-mono text-xs tracking-[0.3em] text-brand">07 — CONTACT</p>
           <h2 className="mt-4 text-4xl sm:text-5xl font-bold tracking-tight">Let's build something good</h2>
           <p className="mt-4 text-ink-soft max-w-xl">Open to internships, full-time roles, and collaborations. I read every message.</p>
         </Reveal>
